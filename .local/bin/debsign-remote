@@ -1,0 +1,14 @@
+#!/bin/sh
+# debsign-remote
+
+AUTO_BUILD_USER="strider";
+AUTO_BUILD_MACHINE="ci-huayra.local";
+AUTO_BUILD_RESULT="/var/lib/strider/result/";
+DEBSIGN=`which debsign`;
+AUTO_BUILD_DPUT="/var/lib/strider/scripts/dput-if-signed";
+SSH=`which ssh`;
+CHANGES_FILE=$1;
+
+${DEBSIGN} -r ${AUTO_BUILD_USER}@${AUTO_BUILD_MACHINE}:${AUTO_BUILD_RESULT}${CHANGES_FILE}
+
+${SSH} ${AUTO_BUILD_USER}@${AUTO_BUILD_MACHINE} "${AUTO_BUILD_DPUT} ${AUTO_BUILD_RESULT}${CHANGES_FILE}" 
