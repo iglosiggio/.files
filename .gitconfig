@@ -10,6 +10,10 @@
 	insteadOf = yo:
 [url "git@github.com:iglosiggio/"]
 	pushInsteadOf = yo:
+[url "git://github.com/"]
+	insteadOf = gh:
+[url "git@github.com:"]
+	pushInsteadOf = gh:
 
 [commit]
 	gpgsign = true
