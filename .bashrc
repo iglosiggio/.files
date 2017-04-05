@@ -118,7 +118,7 @@ DEBFULLNAME="Ignacio Losiggio"
 
 export DEBEMAIL DEBFULLNAME
 
-PATH="~/.local/bin:$PATH"
+PATH="${HOME}/.local/bin:$PATH"
 
 # Local npm -g
 

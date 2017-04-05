@@ -2,18 +2,18 @@
 	email = iglosiggio@gmail.com
 	name = Ignacio Losiggio
 
-[url "git://github.com/HuayraLinux/"]
-	insteadOf = huayra:
 [url "git@github.com:HuayraLinux/"]
+	insteadOf = huayra:
 	pushInsteadOf = huayra:
-[url "git://github.com/iglosiggio/"]
-	insteadOf = yo:
 [url "git@github.com:iglosiggio/"]
+	insteadOf = yo:
 	pushInsteadOf = yo:
-[url "git://github.com/"]
-	insteadOf = gh:
 [url "git@github.com:"]
+	insteadOf = gh:
 	pushInsteadOf = gh:
+[url "git@bitbucket.org:spctr/"]
+	insteadOf = spectro:
+	pushInsteadOf = spectro:
 
 [commit]
 	gpgsign = true
