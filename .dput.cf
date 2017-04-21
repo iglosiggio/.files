@@ -2,7 +2,7 @@
 default_host_main = huayra-repo
 
 [huayra-repo]
-fqdn = devel.huayra.conectarigualdad.gob.ar
+fqdn = repo.huayra
 method = scp
 login = repo
 incoming = /home/repo/linuxparatodos/apt/incoming
